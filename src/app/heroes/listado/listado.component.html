@@ -1,0 +1,26 @@
+<!-- En este documento HTML disponemos de una instancia de la clase "HeroeComponent" -->
+
+<!-- Bloque de Iteración: Recorrido del arreglo "heroes" -->
+<h3>Listado de héroes</h3>
+
+<ul>
+    <li *ngFor="let heroe of heroes; let i = index">
+        {{i + 1}} - {{heroe}}
+    </li>
+</ul>
+<hr>
+
+<!-- Bloque de decisión: Imprimir uno u otro fragemento de código HTML en base a una condición -->
+<div *ngIf="heroeEliminado != null && heroeEliminado != undefined; else noEliminado">
+    <h3><span>Héroe eliminado: {{heroeEliminado}}</span></h3>
+</div>
+
+<ng-template #noEliminado>
+    <h3><span>No ha sido eliminado ningún héroe</span></h3>
+</ng-template>
+
+<button (click) = "eliminarHeroe();">
+    Eliminar
+</button>
+
+<hr>

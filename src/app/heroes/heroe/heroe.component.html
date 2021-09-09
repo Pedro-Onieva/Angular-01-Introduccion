@@ -1,0 +1,26 @@
+<!-- En este documento HTML disponemos de una instancia de la clase "HeroeComponent" -->
+<h1>{{nombre}}</h1>
+
+<dl>
+    <td>Nombre</td>
+    <dd>{{nombre}}</dd>
+
+    <td>Edad</td>
+    <dd>{{edad}}</dd>
+
+    <td>Método</td>
+    <dd>{{obtenerHeroe()}}</dd>
+
+    <td>Nombre en mayúsculas 1</td>
+    <dd>{{nombre.toUpperCase()}}</dd>
+
+    <td>Nombre en mayúsculas 2</td>
+    <dd>{{nombreEnMayusculas}}</dd>
+</dl>
+
+<button (click) = "cambiarNombre();">
+    Cambia héroe
+</button>
+<button (click) = "cambiarEdad()">
+    Cambia edad
+</button>
