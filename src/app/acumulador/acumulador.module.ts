@@ -1,7 +1,7 @@
-// Módulos
+// Elementos importados de Angular
 import { NgModule } from "@angular/core";
 
-// Componentes
+// Elementos propios
 import { AcumuladorComponent } from './acumulador/acumulador.component';
 
 @NgModule

@@ -1,0 +1,9 @@
+<!-- En este documento HTML disponemos de una instancia de la clase "PersonajesComponent" -->
+
+<h3>Personajes</h3>
+<hr>
+<ul>
+    <li *ngFor = "let personaje of personajes;">
+        {{personaje.nombre}} - {{personaje.poder | number}}
+    </li>
+</ul>

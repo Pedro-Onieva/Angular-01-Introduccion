@@ -15,7 +15,7 @@ export class ListadoComponent {
   heroeEliminado?: string;
 
   // Métodos de la clase
-  eliminarHeroe() : void
+  eliminarHeroe(): void
   {
     this.heroeEliminado = this.heroes.pop();
   }

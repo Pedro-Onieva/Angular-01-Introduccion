@@ -1,8 +1,8 @@
-// Módulos
+// Elementos importados de Angular
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 
-// Componentes
+// Elementos propios
 import { HeroeComponent } from './heroe/heroe.component';
 import { ListadoComponent } from './listado/listado.component';
 

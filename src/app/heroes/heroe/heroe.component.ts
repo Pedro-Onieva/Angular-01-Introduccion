@@ -14,7 +14,7 @@ export class HeroeComponent
     // Propiedades de la clase
     nombre: string = "Ironman";
     edad: number = 34;
-    get nombreEnMayusculas() : string
+    get nombreEnMayusculas(): string
     {
         return this.nombre.toUpperCase();
     }

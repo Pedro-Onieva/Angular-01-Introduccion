@@ -1,0 +1,15 @@
+<!-- En este documento HTML disponemos de una instancia de la clase "Agregar2Component" -->
+
+<h3>Agregar</h3>
+<hr>
+
+<form (ngSubmit) = "agregar()">
+    <!-- Two way data binding -->
+    <!-- Los corchetes en la propiedad "ngModel" indican que lo que acontece hace referencia a la instancia de la clase relacionada en TypeScript -->
+    <!-- Los paréntesis en propiedad "ngModel" indican que se debe establecer el valor del formulario en la instancia de la clase relacionada en TypeScript -->
+    <input type = "text" placeholder = "Nombre" name = "nombre" [(ngModel)] = nuevo.nombre/>
+    <input type = "number" placeholder = "Poder" name = "poder" [(ngModel)] = nuevo.poder/>
+    
+    <button type = "submit">Agregar</button>
+</form>
+

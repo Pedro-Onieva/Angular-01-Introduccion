@@ -1,0 +1,18 @@
+<!-- En este documento HTML disponemos de una instancia de la clase "MainPageComponent" -->
+
+<h1>Dragón Ball Z</h1>
+<hr>
+
+<div class = "row">
+    <div class = "col">
+        <!-- Entre corchetes figura el nombre de la propiedad que recibe el valor en el componente llamado -->
+        <!-- A la derecha del operador de asignación figura la propiedad enviada por este componente -->
+        <app-personajes></app-personajes>
+    </div>
+    <div class = "colEnd">
+        <!-- Entre paréntesis figura la escucha de un evento definido en el componente hijo "AgregarComponent" -->
+        <!-- Este evento se encuentra asociado a un método de la clase "MainPageComponent": agregarNuevoPersonaje -->
+        <!-- Dicho método recibe un parámetro de tipo "Personaje" que se corresponde con el argumento "$event" -->
+        <app-agregar [nuevo] = nuevo></app-agregar>
+    </div>
+</div>
